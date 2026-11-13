@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#171116">
+  <meta name="description" content="Un pequeño espacio hecho de palabras, flores y recuerdos.">
+  <title>Un detalle para ti ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="petals petals-left" aria-hidden="true">✿</div>
+  <div class="petals petals-right" aria-hidden="true">✿</div>
+  <header class="hero">
+    <div class="flower-line" aria-hidden="true">✿ <span>❀</span> ✿</div>
+    <p class="eyebrow">UN PEQUEÑO DETALLE, TODOS LOS DÍAS</p>
+    <h1>Un mensaje por <em> cada día contigo.</em></h1>
+  </header>
+
+  <main class="layout">
+    <section class="today-panel" aria-labelledby="today-title">
+      <div class="today-heading">
+        <span class="today-flower">✿</span>
+        <div>
+          <h2 id="today-title">El detalle de hoy</h2>
+        </div>
+      </div>
+      <article id="today-entry" class="today-entry">
+        <p class="loading">Preparando una sorpresa…</p>
+      </article>
+      <p class="today-note">Y mañana habrá un nuevo mensaje para ti.</p>
+    </section>
+
+    <section class="archive" aria-labelledby="archive-title">
+      <div class="archive-heading">
+        <div>
+          <p class="eyebrow">CADA PALABRA TIENE SU DÍA</p>
+          <h2 id="archive-title">Nuestro pequeño diario</h2>
+        </div>
+        <span class="archive-count" id="entry-count">0 detalles</span>
+      </div>
+      <div id="entry-list" class="entry-list" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-flower">❀</div>
+    <p>Hecho especialmente para ti.</p>
+    <span>Con amor, hoy y todos los días. ♡</span>
+  </footer>
+
+  <script src="entries.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
